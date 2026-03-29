@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="assets/banner.svg" alt="XYZ Test Runner Banner" width="800">
+</div>
+
 # ▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▌
 # ▐                             ▌
 # ▐    __  __ __   __  _____    ▌
