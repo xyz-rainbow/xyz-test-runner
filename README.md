@@ -2,16 +2,6 @@
   <img src="assets/banner.svg" alt="XYZ Test Runner Banner" width="800">
 </div>
 
-# ▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▌
-# ▐                             ▌
-# ▐    __  __ __   __  _____    ▌
-# ▐    \ \/ / \ \ / / |__  /    ▌
-# ▐     \  /   \ V /    / /     ▌
-# ▐     /  \    | |    / /_     ▌
-# ▐    /_/\_\   |_|   /____|    ▌
-# ▐                             ▌
-# ▐▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▌
-
 **xyz-test-runner** - Universal Test Runner for Python Projects
 
 ---
