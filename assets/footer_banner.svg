@@ -1,0 +1,34 @@
+<svg width="800" height="150" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="neon" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <linearGradient id="signatureGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B026FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00E5FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Dark Background -->
+  <rect width="800" height="150" fill="#0a0a0f" rx="10" />
+
+  <!-- Diagonal Tech Lines -->
+  <line x1="10" y1="140" x2="790" y2="10" stroke="#B026FF" stroke-width="0.3" opacity="0.2" />
+  <line x1="10" y1="10" x2="790" y2="140" stroke="#00E5FF" stroke-width="0.3" opacity="0.2" />
+
+  <!-- Signature Line -->
+  <path d="M 50 120 L 750 120" stroke="url(#signatureGrad)" stroke-width="2" filter="url(#neon)" />
+  
+  <!-- Final Badge -->
+  <circle cx="400" cy="70" r="45" fill="none" stroke="#B026FF" stroke-width="1" opacity="0.4" />
+  <circle cx="400" cy="70" r="40" fill="none" stroke="#00E5FF" stroke-width="2" filter="url(#neon)" />
+  
+  <text x="50%" y="78" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="24" fill="#fff" filter="url(#neon)">XYZ</text>
+
+  <!-- Tagline -->
+  <text x="50%" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#e0e0e0" opacity="0.8" style="letter-spacing: 5px; text-transform: uppercase;">Rainbow Technology Official Suite</text>
+
+  <!-- Micro Signatures -->
+  <text x="50%" y="140" text-anchor="middle" font-family="monospace" font-size="8" fill="#444">#xyz-rainbow #rainbowtechnology.xyz #i-love-you</text>
+</svg>

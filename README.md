@@ -92,6 +92,10 @@ The runner automatically detects:
 
 ---
 
+<div align="center">
+  <img src="assets/config_banner.svg" alt="XYZ Configuration Banner" width="800">
+</div>
+
 ## Configuration
 
 Edit the `config` file to customize:
@@ -195,6 +199,10 @@ Generate: 5
 ```
 
 ---
+
+<div align="center">
+  <img src="assets/footer_banner.svg" alt="XYZ Footer Banner" width="800">
+</div>
 
 ## License
 
