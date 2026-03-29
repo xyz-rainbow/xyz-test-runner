@@ -21,13 +21,13 @@
   <path d="M 50 120 L 750 120" stroke="url(#signatureGrad)" stroke-width="2" filter="url(#neon)" />
   
   <!-- Final Badge -->
-  <circle cx="400" cy="70" r="45" fill="none" stroke="#B026FF" stroke-width="1" opacity="0.4" />
-  <circle cx="400" cy="70" r="40" fill="none" stroke="#00E5FF" stroke-width="2" filter="url(#neon)" />
+  <circle cx="400" cy="50" r="45" fill="none" stroke="#B026FF" stroke-width="1" opacity="0.4" />
+  <circle cx="400" cy="50" r="40" fill="none" stroke="#00E5FF" stroke-width="2" filter="url(#neon)" />
   
-  <text x="50%" y="78" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="24" fill="#fff" filter="url(#neon)">XYZ</text>
+  <text x="50%" y="58" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="24" fill="#fff" filter="url(#neon)">XYZ</text>
 
   <!-- Tagline -->
-  <text x="50%" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#e0e0e0" opacity="0.8" style="letter-spacing: 5px; text-transform: uppercase;">Rainbow Technology Official Suite</text>
+  <text x="50%" y="95" text-anchor="middle" font-family="monospace" font-size="10" fill="#e0e0e0" opacity="0.8" style="letter-spacing: 5px; text-transform: uppercase;">Rainbow Technology Official Suite</text>
 
   <!-- Micro Signatures -->
   <text x="50%" y="140" text-anchor="middle" font-family="monospace" font-size="8" fill="#444">#xyz-rainbow #rainbowtechnology.xyz #i-love-you</text>
