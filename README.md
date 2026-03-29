@@ -2,8 +2,6 @@
   <img src="assets/banner.svg" alt="XYZ Test Runner Banner" width="800">
 </div>
 
-**xyz-test-runner** - Universal Test Runner for Python Projects
-
 ---
 
 ## Features
