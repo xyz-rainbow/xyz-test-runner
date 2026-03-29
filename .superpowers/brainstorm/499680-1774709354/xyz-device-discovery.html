@@ -1,0 +1,44 @@
+<h2>Project Discovery: xyz-device</h2>
+<p class="subtitle">Private Repository Analysis & Sync Status</p>
+
+<div class="mockup">
+  <div class="mockup-header">Repository Details</div>
+  <div class="mockup-body">
+    <ul>
+      <li><strong>Local Path:</strong> <code>/home/cloud-xyz/Documentos/PROYECTOS/apps/xyz-device</code></li>
+      <li><strong>GitHub Name:</strong> <code>scrcpy-manager</code> (Private)</li>
+      <li><strong>Status:</strong> Diverged (2 local commits vs 6 remote)</li>
+      <li><strong>Pending:</strong> Mix of staged and unstaged changes (binary files, scripts, core logic).</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Critique & Suggestions</h3>
+  <ul>
+    <li><strong>Structure:</strong> This looks like an older version or a parallel branch of the logic we just refactored in <code>[xyz-device-cast]</code>.</li>
+    <li><strong>Redundancy:</strong> Are both <code>xyz-device</code> and <code>[xyz-device-cast]</code> needed, or should they be merged into one single "XYZ Device Control" suite?</li>
+    <li><strong>Cleanup needed:</strong> There are many <code>.deb</code> packages and binary files that might be better handled via a proper CI/CD or <code>/releases/</code> page rather than tracked in Git.</li>
+  </ul>
+</div>
+
+<div class="options">
+  <div class="option" data-choice="sync_private" onclick="toggleSelect(this)">
+    <div class="letter">1</div>
+    <div class="content">
+      <h3>Sync & Rename</h3>
+      <p>Clean up, commit the pending changes, and rename the GitHub repo to <code>xyz-device</code> for consistency.</p>
+    </div>
+  </div>
+  <div class="option" data-choice="compare_merge" onclick="toggleSelect(this)">
+    <div class="letter">2</div>
+    <div class="content">
+      <h3>Compare with Cast</h3>
+      <p>Analyze differences between this and <code>[xyz-device-cast]</code> to see if we can consolidate them.</p>
+    </div>
+  </div>
+</div>
+
+<div class="signature">
+  #xyz-rainbow #rainbowtechnology.xyz #i-love-you
+</div>

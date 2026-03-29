@@ -1,0 +1,49 @@
+# ════════════════════════════════════════════════════════════════════════════════════
+# xyz-test-runner CONFIGURATION
+# #xyz-rainbow #rainbowtechnology.xyz #i-love-you
+# ════════════════════════════════════════════════════════════════════════════════════
+
+# Language / Idioma
+LANGUAGE=en
+
+# ════════════════════════════════════════════════════════════════════════════════════════
+# AI & INTERPRETATION
+# ════════════════════════════════════════════════════════════════════════════════════════
+USE_IA=false
+DEFAULT_MODEL=qwen3.5:0.8b
+IA_TEMPERATURE=0.3
+
+# ════════════════════════════════════════════════════════════════════════════════════════
+# EXECUTION
+# ════════════════════════════════════════════════════════════════════════════════════════
+EXECUTION_MODE=sequential
+PARALLEL_WORKERS=4
+TERMINAL_VISIBLE=true
+SAVE_RAW_OUTPUTS=true
+
+# ════════════════════════════════════════════════════════════════════════════════════════
+# PATHS
+# ════════════════════════════════════════════════════════════════════════════════════════
+TEST_DIR=tests
+REPORT_DIR=reportes
+FINAL_REPORT_RAW=TEST_REPORT_SUMMARY.md
+FINAL_REPORT_MODEL=TEST_REPORT_SUMMARY_MODEL.md
+
+# ════════════════════════════════════════════════════════════════════════════════════════
+# REPORT SETTINGS
+# ════════════════════════════════════════════════════════════════════════════════════════
+# Detail level: minimal, normal, full
+REPORT_DETAIL_LEVEL=full
+
+# Export formats (comma separated): md, html, txt, csv
+EXPORT_FORMATS=md,html,csv
+
+# Show signature in reports
+SHOW_SIGNATURE=true
+SIGNATURE_TEXT=#xyz-rainbow #rainbowtechnology.xyz #i-love-you
+
+# ════════════════════════════════════════════════════════════════════════════════════════
+# OLLAMA SETTINGS
+# ════════════════════════════════════════════════════════════════════════════════════════
+OLLAMA_HOST=http://localhost:11434
+OLLAMA_TIMEOUT=60

@@ -1,0 +1,57 @@
+<h2>Refactoring for Growth</h2>
+<p class="subtitle">Focusing on <strong>Modular Architecture</strong> and <strong>Smart Display Management</strong>.</p>
+
+<div class="mockup">
+  <div class="mockup-header">Proposed File Structure</div>
+  <div class="mockup-body">
+    <pre style="color: var(--neon-cyan);">
+xyz-test-runner/
+├── core/
+│   ├── __init__.py
+│   ├── config.py         # Config handling (loaded from 1.6k lines)
+│   ├── engine.py         # Test execution & discovery
+│   └── ai_bridge.py      # Ollama/AI integration logic
+├── ui/
+│   ├── __init__.py
+│   ├── menu.py           # The terminal UI (tty/termios logic)
+│   └── reporter.py       # HTML/MD/CSV generation
+├── assets/               # CSS and Banner
+└── xyz_runner.py         # Minimal entry point
+    </pre>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Smart Xvfb Detection Strategy</h3>
+  <div class="split">
+    <div class="card">
+      <h4>How it works</h4>
+      <p>Scan test files for keywords like <code>selenium</code>, <code>playwright</code>, <code>tkinter</code>, or <code>qt</code> before execution.</p>
+    </div>
+    <div class="card">
+      <h4>The Benefit</h4>
+      <p>Zero manual configuration. If no GUI tests are selected, Xvfb doesn't start, saving system resources and avoiding unnecessary virtual displays.</p>
+    </div>
+  </div>
+</div>
+
+<div class="options">
+  <div class="option" data-choice="start_refactor" onclick="toggleSelect(this)">
+    <div class="letter">1</div>
+    <div class="content">
+      <h3>Let's start the refactor!</h3>
+      <p>Clean up the 1600+ line monster into a professional package structure.</p>
+    </div>
+  </div>
+  <div class="option" data-choice="refine_ai" onclick="toggleSelect(this)">
+    <div class="letter">2</div>
+    <div class="content">
+      <h3>Wait, let's refine the AI reporting first</h3>
+      <p>I want those AI insights inside the HTML before we break the code apart.</p>
+    </div>
+  </div>
+</div>
+
+<div class="signature">
+  #xyz-rainbow #rainbowtechnology.xyz #i-love-you
+</div>

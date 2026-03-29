@@ -1,0 +1,49 @@
+<h2>XYZ Test Runner: Future Vision</h2>
+<p class="subtitle">Improving architecture, intelligence, and integration. Choose the direction that interests you most.</p>
+
+<div class="options" data-multiselect>
+  <div class="option" data-choice="modularity" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Modular Core Refactor</h3>
+      <p>Splitting the single script into specialized modules: <code>config_manager.py</code>, <code>test_engine.py</code>, <code>report_factory.py</code>, and <code>ai_bridge.py</code>. Easier to maintain and extend.</p>
+    </div>
+  </div>
+  
+  <div class="option" data-choice="ai_reports" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Integrated AI Insights</h3>
+      <p>Moving AI interpretations directly into the HTML report as a dedicated section. Adding <strong>Root Cause Analysis</strong> for failures based on logs.</p>
+    </div>
+  </div>
+  
+  <div class="option" data-choice="auto_xvfb" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Smart Xvfb Detection</h3>
+      <p>Automatically detecting if a test requires a display (e.g., Selenium, Playwright) and launching Xvfb only when needed, reducing overhead.</p>
+    </div>
+  </div>
+  
+  <div class="option" data-choice="dashboard" onclick="toggleSelect(this)">
+    <div class="letter">D</div>
+    <div class="content">
+      <h3>Web Dashboard</h3>
+      <p>A lightweight Flask/FastAPI backend to browse historical reports and trigger test runs from a browser, instead of just the CLI.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Current Criticisms & Improvements</h3>
+  <ul>
+    <li><strong>Code Smells:</strong> The script is 1600+ lines. It's becoming hard to navigate.</li>
+    <li><strong>Portability:</strong> Hardcoded paths in reports (like <code>../assets/style.css</code>) break if moved. Suggestion: Embed assets as base64 or copy them to the report folder.</li>
+    <li><strong>Test Isolation:</strong> Running tests in parallel might lead to race conditions if they share resources.</li>
+  </ul>
+</div>
+
+<div class="signature">
+  #xyz-rainbow #rainbowtechnology.xyz #i-love-you
+</div>

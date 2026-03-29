@@ -1,0 +1,44 @@
+<h2>Refactoring Strategy</h2>
+<p class="subtitle">How should we structure the project for the future?</p>
+
+<div class="options">
+  <div class="option" data-choice="full_package" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Full Professional Package</h3>
+      <p>Uses <code>pyproject.toml</code> and <code>src/</code>. Installable via <code>pip</code>. Best for distribution via PyPI or internal tools. Cleanest code separation.</p>
+      <div class="pros-cons">
+        <div class="pros"><ul><li>Industry standard</li><li>Easy dependencies</li></ul></div>
+        <div class="cons"><ul><li>Harder to "just copy" folder</li></ul></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="option" data-choice="hybrid_bundle" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Hybrid (Modular + Bundler)</h3>
+      <p>We develop in modules (clean), but have a script to <strong>bundle</strong> it back into a single <code>xyz-test-runner.py</code> for easy sharing.</p>
+      <div class="pros-cons">
+        <div class="pros"><ul><li>Best of both worlds</li><li>Stays portable</li></ul></div>
+        <div class="cons"><ul><li>Extra build step needed</li></ul></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="option" data-choice="simple_split" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Simple Modular Split</h3>
+      <p>Just split the 1.6k lines into 3-4 files in the root folder. No complex structure, just <code>xyz_main.py</code>, <code>xyz_engine.py</code>, etc.</p>
+      <div class="pros-cons">
+        <div class="pros"><ul><li>Zero overhead</li><li>Very easy to read</li></ul></div>
+        <div class="cons"><ul><li>Not a "standard" package</li></ul></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="signature">
+  #xyz-rainbow #rainbowtechnology.xyz #i-love-you
+</div>
