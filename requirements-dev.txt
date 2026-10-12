@@ -1,0 +1,6 @@
+# Runtime dependency for scripts/xyz-test-runner.py (Ollama HTTP client)
+requests>=2.31.0,<3
+
+# CI / local development
+pytest>=8.0.0,<10
+ruff>=0.8.0,<1

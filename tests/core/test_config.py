@@ -1,19 +1,15 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 """
 Tests for TestConfig class in xyz-test-runner
 #xyz-rainbow #rainbowtechnology.xyz #i-love-you
 """
 
-import os
-import sys
-import tempfile
-import shutil
-from pathlib import Path
 import importlib.util
-
-import pytest
+import os
+import shutil
+import tempfile
+from pathlib import Path
 
 # Cargar el script como un módulo a pesar del guion en el nombre
 script_path = Path(__file__).parent.parent.parent / "scripts" / "xyz-test-runner.py"

@@ -1,0 +1,34 @@
+[project]
+name = "xyz-test-runner"
+version = "2.0.0"
+description = "Universal interactive test runner with optional AI reporting"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31.0,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0,<10",
+    "ruff>=0.8.0,<1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 120
+src = ["scripts", "tests", "templates"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+ignore = [
+    "E501",   # long lines (i18n strings, ASCII art)
+    "E722",   # bare except in CLI/network paths
+    "EXE001", # shebang on test modules
+    "UP035",  # typing.Dict/List in legacy runner
+    "RUF015",
+]
