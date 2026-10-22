@@ -1,7 +1,7 @@
-import sys
 import importlib.util
+import sys
 from pathlib import Path
-from unittest.mock import MagicMock, patch
+from unittest.mock import patch
 
 script_path = Path(__file__).parent.parent.parent / "scripts" / "xyz-test-runner.py"
 spec = importlib.util.spec_from_file_location("xyz_test_runner", script_path)
