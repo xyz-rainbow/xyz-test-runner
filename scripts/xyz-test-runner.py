@@ -27,9 +27,11 @@ import requests
 try:
     import termios
     import tty
+    import os
+    import sys
 
-    HAS_TTY = True
-except ImportError:
+    HAS_TTY = os.isatty(sys.stdin.fileno())
+except (ImportError, AttributeError, ValueError):
     HAS_TTY = False
 
 # #xyz-rainbowtechnology #rainbow.xyz #You're not supposed to see this!
@@ -677,7 +679,6 @@ class TestRunner:
 </body>
 </html>"""
         # #You're not supposed to see this!
-        return html
         return html
 
     def generate_report_csv(self) -> str:
