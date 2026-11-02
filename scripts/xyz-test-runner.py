@@ -25,10 +25,10 @@ from pathlib import Path
 import requests
 
 try:
-    import termios
-    import tty
     import os
     import sys
+    import termios
+    import tty
 
     HAS_TTY = os.isatty(sys.stdin.fileno())
 except (ImportError, AttributeError, ValueError):
