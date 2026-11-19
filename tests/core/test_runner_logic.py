@@ -227,3 +227,23 @@ def test_menu_detect_framework(tmp_path):
             # 0 index is typically "Auto-detect" which returns the first detected
             detected = menu.detect_or_select_framework(tmp_path)
             assert detected in ["pytest", "jest"]
+
+def test_get_key_mock_stdin(tmp_path):
+    config = xyz.TestConfig("dummy")
+    with patch("xyz_test_runner.OllamaManager"):
+        runner = xyz.TestRunner(str(tmp_path), config)
+        menu = xyz.Menu(runner)
+
+        # When HAS_TTY is False, it falls back to input().
+        # We need to simulate that we don't have a TTY, which our patched script determines at load time.
+        # But for this test, we can just ensure that if we call get_key when HAS_TTY is False, it reads from input.
+
+        # Temporarily mock the module's HAS_TTY and built-in input
+        original_has_tty = xyz.HAS_TTY
+        xyz.HAS_TTY = False
+
+        with patch('builtins.input', return_value="a"):
+            key = menu.get_key()
+            assert key == "a"
+
+        xyz.HAS_TTY = original_has_tty

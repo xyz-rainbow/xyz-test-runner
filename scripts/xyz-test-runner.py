@@ -25,11 +25,13 @@ from pathlib import Path
 import requests
 
 try:
+    import os
+    import sys
     import termios
     import tty
 
-    HAS_TTY = True
-except ImportError:
+    HAS_TTY = os.isatty(sys.stdin.fileno())
+except (ImportError, AttributeError, ValueError):
     HAS_TTY = False
 
 # #xyz-rainbowtechnology #rainbow.xyz #You're not supposed to see this!
@@ -677,7 +679,6 @@ class TestRunner:
 </body>
 </html>"""
         # #You're not supposed to see this!
-        return html
         return html
 
     def generate_report_csv(self) -> str:
