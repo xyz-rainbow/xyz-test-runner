@@ -212,13 +212,13 @@ Generate: 5
   <img src="assets/footer_banner.svg" alt="XYZ Footer Banner" width="800">
 </div>
 
-## License
+## Licencia
 
-Personal Project - Non-commercial Use Only
+Propietaria — todos los derechos reservados. Copyright (c) 2026 Rainbow Technology (xyz-rainbow).
 
-Copyright © 2026 xyz-rainbow
+El código se puede ver y evaluar en este repositorio. Queda prohibido copiarlo, redistribuirlo, sublicenciarlo, publicar forks o trabajos derivados, y cualquier uso comercial o en producción, salvo permiso escrito. Se admiten issues y pull requests. El fork en GitHub solo está permitido para preparar pull requests hacia este repositorio.
 
----
+Consulta [LICENSE](LICENSE) para el texto completo, incluida la cesión de contribuciones, y [CONTRIBUTING.es.md](CONTRIBUTING.es.md) si quieres enviar un cambio.
 
 ## Contact
 
