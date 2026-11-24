@@ -8,6 +8,7 @@
   <img src="https://img.shields.io/badge/testing-interactive--cli-ff2bd6?style=flat-square" alt="testing">
   <img src="https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-00f0ff?style=flat-square" alt="platform">
   <img src="https://img.shields.io/badge/GPU-protection-ff2bd6?style=flat-square" alt="gpu">
+  <a href="LICENSE"><img alt="License: Proprietary" src="https://img.shields.io/badge/license-Proprietary-red?style=flat-square"></a>
 </p>
 
 ---
