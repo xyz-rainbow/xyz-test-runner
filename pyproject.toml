@@ -3,6 +3,10 @@ name = "xyz-test-runner"
 version = "2.0.0"
 description = "Universal interactive test runner with optional AI reporting"
 readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: Other/Proprietary License",
+]
 requires-python = ">=3.10"
 dependencies = [
     "requests>=2.31.0,<3",
